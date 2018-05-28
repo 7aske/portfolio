@@ -1,0 +1,262 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body,
+html {
+	margin: 0px;
+	padding: 0px;
+	background-color: #dddddd;
+}
+
+a {
+	text-decoration: none;
+	color: #343434;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.container-fluid {
+	padding: 0px !important;
+}
+
+#header {
+	transition: all 500ms;
+	width: 100%;
+	height: 50px;
+	background-color: #343434;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	color: #dddddd;
+	top: -50px;
+	.col {
+		line-height: 50px;
+		font-size: 28px;
+	}
+	#menu {
+		padding: 5px;
+		display: flex;
+		justify-content: space-evenly;
+		.skill {
+			color: #dddddd;
+			text-align: center;
+			padding: 8px;
+			border-radius: 5px;
+			width: 110px;
+			border: 2px solid #dddddd;
+			line-height: 18px;
+			font-size: 18px;
+			cursor: pointer;
+			i {
+				transition: all 500ms;
+				-moz-transition-timing-function: ease-in-out;
+			}
+			&:hover i {
+				transform: rotate(360deg);
+			}
+		}
+		.highlighted {
+			background-color: #dddddd;
+			color: #343434;
+		}
+	}
+}
+
+#slider {
+	background: {
+		image: url(http://agilemanagementoffice.com/wp-content/uploads/2017/10/computer-laptop-work-office.jpg);
+		size: 100%;
+		attachment: fixed;
+	}
+	padding-top: 23%;
+	.name-container {
+		background-image: url(../images/name-container.png);
+		background-color: #565656;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.name-image {
+			text-align: center;
+			border-top: 3px solid #343434;
+			img {
+				border: 3px solid #343434;
+				margin-top: -150px;
+				border-radius: 50%;
+				width: 300px;
+			}
+		}
+		.name-title {
+			color: #dddddd;
+			text-shadow: 0px 0px 1px #dddddd;
+			box-sizing: border-box;
+			padding: 15px;
+			text-align: center;
+			font-size: 50px;
+		}
+		.name-text {
+			font-family: 'Pacifico', cursive;
+			margin-bottom: 25px;
+			box-sizing: border-box;
+			padding: 15px;
+			color: #dddddd;
+			letter-spacing: 1em;
+			text-align: center;
+			font-size: 24px;
+		}
+	}
+	.skills-container {
+		position: relative;
+		border-top: 3px solid #343434;
+		border-bottom: 3px solid #343434;
+		background-color: #6b6b6b;
+		box-sizing: border-box;
+		padding: 50px 0px;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			a {
+				box-shadow: 0px 0px 2px #343434;
+				text-shadow: 0px 0px 1px #343434;
+				font-weight: 700;
+				color: #dddddd;
+				border-radius: 50%;
+				width: 90px;
+				height: 90px;
+				padding: 10px;
+				border: 2px solid #343434;
+				text-align: center;
+				font-size: 18px;
+				line-height: 24px;
+				transition: all 300ms;
+				cursor: pointer;
+				i {
+					color: #343434;
+					transition: all 500ms;
+					transition-timing-function: ease-in-out;
+					font-size: 32px;
+				}
+				&:hover i {
+					transform: rotate(360deg);
+				}
+			}
+		}
+	}
+}
+
+#skills {
+	div {
+		padding-top: 10px;
+		border-bottom: 2px solid rgba(99, 99, 99, 0.5);
+		display: flex;
+		img {
+			padding: 5px;
+			margin: 25px 0px;
+			height: 100%;
+			box-shadow: 0px 0px 0px black;
+			border-radius: 5px;
+			transition: all 400ms ease-in-out;
+		}
+		&:hover img {
+			box-shadow: 0px 5px 15px black;
+			transform: scale(1.05);
+		}
+		p {
+			padding: 50px;
+		}
+	}
+}
+
+.divider {
+	height: 150px;
+	background-color: #343434;
+	text-align: center;
+	color: #dddddd;
+	font-size: 44px;
+	line-height: 150px;
+}
+
+#work {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	.card-body {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		color: #dddddd;
+		background-color: rgba(0, 0, 0, 0.7)
+	}
+	.work-thumbnail {
+		cursor: pointer;
+		border: 2px solid #343434;
+		border-radius: 5px;
+		background-color: #eeeeee;
+		margin: 0px 20px;
+		padding: 1px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		width: 300px;
+		margin-bottom: 10px;
+		img {
+			//clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+			border-radius: 5px;
+			width: 100%;
+		}
+		p {
+			margin-bottom: 0px;
+			width: 100%;
+			text-align: center;
+		}
+		transition: all 300ms;
+		transition-timing-function: ease-in-out;
+		&:hover {
+			background-color: #343434;
+			color: #eeeeee;
+		}
+	}
+	.modal-dialog {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.modal-content {
+		min-height: 100%;
+		border-radius: 0;
+	}
+}
+
+#about {
+	.about-text {
+		padding: 30px 10%;
+	}
+	.about-float-img {
+		border: 2px solid #343434;
+		margin-right: 20px;
+		border-radius: 50%;
+		height: 200px;
+		float: left;
+	}
+	.about-list {
+		text-align: center;
+	}
+}
+
+#contact {
+	padding: 40px 20%;
+	h3 {
+		margin: 30px 0px;
+	}
+	.btn-lg {
+		color: #eeeeee;
+		background-color: #616161;
+		border: 2px solid #494949;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			filter: invert(1);
+		}
+	}
+}
