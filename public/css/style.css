@@ -176,7 +176,7 @@ a:hover {
   transition: all 400ms ease-in-out;
 }
 
-#skills div:hover img {
+#skills div:hover img:hover {
   box-shadow: 0px 5px 15px black;
   transform: scale(1.05);
 }

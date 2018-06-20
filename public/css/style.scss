@@ -159,7 +159,7 @@ a {
 			border-radius: 5px;
 			transition: all 400ms ease-in-out;
 		}
-		&:hover img {
+		&:hover img:hover {
 			box-shadow: 0px 5px 15px black;
 			transform: scale(1.05);
 		}
