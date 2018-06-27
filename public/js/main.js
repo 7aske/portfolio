@@ -54,52 +54,20 @@ document.addEventListener('scroll', event => {
 allButtons.forEach(button => {
 	button.addEventListener('click', event => {
 		event.preventDefault();
-		let element = document.querySelector(
-			event.target.attributes['data-scrollTo'].nodeValue
-		);
-		window.scroll({
-			top: element.offsetTop - 150,
-			left: 0,
-			behavior: 'smooth'
-		});
+		let element = document.querySelector(event.target.attributes['data-scrollTo'].nodeValue);
+		console.log(element);
+		if (element == null) {
+			window.scroll({
+				top: 0,
+				left: 0,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: element.offsetTop - 150,
+				left: 0,
+				behavior: 'smooth'
+			});
+		}
 	});
 });
-
-let cards = document.querySelectorAll('.card');
-console.log(cards);
-
-cards.forEach(card => {
-	let animating = false;
-	let c = card.lastElementChild;
-	c.classList.add('d-none');
-	let hovering = false
-
-	function slideDown() {
-		if (animating) {
-			c.classList.remove('slideInUp')
-			c.classList.add('slideOutDown')
-			setTimeout(() => {
-				animating = false;
-				c.classList.add('d-none');
-				c.classList.remove('slideOutDown')
-			}, 800)
-
-		}
-	}
-	card.addEventListener('mouseenter', (event) => {
-		hovering = true;
-		if (!animating) {
-			c.classList.add('animated', 'slideInUp')
-			c.classList.remove('d-none');
-			setTimeout(() => {
-				animating = true;
-				if (hovering) slideDown();
-			}, 800)
-		}
-	});
-	card.addEventListener('mouseleave', (event) => {
-		hovering = false;
-		slideDown();
-	});
-
-})
