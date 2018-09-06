@@ -1,18 +1,17 @@
-let slider = document.getElementById('slider');
-let header = document.getElementById('header');
+const slider = document.getElementById('slider');
+const header = document.getElementById('header');
 let sliderBottom = slider.offsetTop + slider.offsetHeight - 20;
-
-let buttons = document.querySelectorAll('#menu .skill');
-let allButtons = document.querySelectorAll('.skill');
-let skills = document.getElementById('skills');
+const buttons = document.querySelectorAll('#menu .skill');
+const allButtons = document.querySelectorAll('.skill');
+const skills = document.getElementById('skills');
 let skillsTrigger = skills.offsetTop;
-let work = document.getElementById('work');
+const work = document.getElementById('work');
 let workTrigger = work.offsetTop - work.offsetHeight / 2;
-let about = document.getElementById('about');
+const about = document.getElementById('about');
 let aboutTrigger = about.offsetTop - about.offsetHeight / 2;
-let contact = document.getElementById('contact');
+const contact = document.getElementById('contact');
 let contactTrigger = contact.offsetTop - contact.offsetHeight;
-
+const form = document.querySelector('form');
 function menu(y) {
 	if (sliderBottom < y) {
 		header.style.transform = 'translateY(50px)';
@@ -46,16 +45,14 @@ function highlighter(y) {
 		buttons[3].classList.remove('highlighted');
 	}
 }
-document.addEventListener('scroll', event => {
+document.addEventListener('mousewheel', event => {
 	menu(event.pageY);
 	highlighter(event.pageY);
-	event.preventDefault();
 });
 allButtons.forEach(button => {
 	button.addEventListener('click', event => {
 		event.preventDefault();
-		let element = document.querySelector(event.target.attributes['data-scrollTo'].nodeValue);
-		console.log(element);
+		let element = document.querySelector(event.target.attributes['data-scrollTo'].value);
 		if (element == null) {
 			window.scroll({
 				top: 0,

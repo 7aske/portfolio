@@ -23,6 +23,7 @@ a:hover {
 }
 
 #header {
+  -webkit-transition: all 500ms;
   transition: all 500ms;
   width: 100%;
   height: 50px;
@@ -30,6 +31,8 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #dddddd;
   top: -50px;
@@ -42,8 +45,12 @@ a:hover {
 
 #header #menu {
   padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #header #menu .skill {
@@ -59,12 +66,14 @@ a:hover {
 }
 
 #header #menu .skill i {
+  -webkit-transition: all 500ms;
   transition: all 500ms;
   -moz-transition-timing-function: ease-in-out;
 }
 
 #header #menu .skill:hover i {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #header #menu .highlighted {
@@ -82,27 +91,39 @@ a:hover {
 #slider .name-container {
   background-image: url(../images/name-container.png);
   background-color: #565656;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #slider .name-container .name-image {
-  text-align: center;
-  border-top: 3px solid #343434;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  overflow: hidden;
+  border: 3px solid #343434;
+  border-radius: 50%;
 }
 
 #slider .name-container .name-image img {
-  border: 3px solid #343434;
-  margin-top: -150px;
-  border-radius: 50%;
-  width: 300px;
+  position: relative;
+  left: -75px;
+  height: inherit;
 }
 
 #slider .name-container .name-title {
   color: #dddddd;
   text-shadow: 0px 0px 1px #dddddd;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
   text-align: center;
   font-size: 50px;
@@ -111,7 +132,8 @@ a:hover {
 #slider .name-container .name-text {
   font-family: 'Pacifico', cursive;
   margin-bottom: 25px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
   color: #dddddd;
   letter-spacing: 1em;
@@ -124,17 +146,23 @@ a:hover {
   border-top: 3px solid #343434;
   border-bottom: 3px solid #343434;
   background-color: #6b6b6b;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 50px 0px;
 }
 
 #slider .skills-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #slider .skills-container .container a {
-  box-shadow: 0px 0px 2px #343434;
+  -webkit-box-shadow: 0px 0px 2px #343434;
+          box-shadow: 0px 0px 2px #343434;
   text-shadow: 0px 0px 1px #343434;
   font-weight: 700;
   color: #dddddd;
@@ -146,24 +174,30 @@ a:hover {
   text-align: center;
   font-size: 18px;
   line-height: 24px;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
   cursor: pointer;
 }
 
 #slider .skills-container .container a i {
   color: #343434;
+  -webkit-transition: all 500ms;
   transition: all 500ms;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   font-size: 32px;
 }
 
 #slider .skills-container .container a:hover i {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #skills div {
   padding-top: 10px;
   border-bottom: 2px solid rgba(99, 99, 99, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -171,14 +205,18 @@ a:hover {
   padding: 5px;
   margin: 25px 0px;
   height: 200px;
-  box-shadow: 0px 0px 0px black;
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
   border-radius: 5px;
+  -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
 
 #skills div:hover img:hover {
-  box-shadow: 0px 5px 15px black;
-  transform: scale(1.05);
+  -webkit-box-shadow: 0px 5px 15px black;
+          box-shadow: 0px 5px 15px black;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #skills div p {
@@ -196,13 +234,19 @@ a:hover {
 
 #work {
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #work a {
   color: #0093f5;
+  -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
@@ -238,11 +282,13 @@ a:hover {
   color: #eeeeee;
   background-color: #616161;
   border: 2px solid #494949;
+  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 #contact .btn-lg:hover {
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .bg-dark {
