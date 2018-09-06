@@ -11,7 +11,6 @@ const about = document.getElementById('about');
 let aboutTrigger = about.offsetTop - about.offsetHeight / 2;
 const contact = document.getElementById('contact');
 let contactTrigger = contact.offsetTop - contact.offsetHeight;
-const form = document.querySelector('form');
 function menu(y) {
 	if (sliderBottom < y) {
 		header.style.transform = 'translateY(50px)';
