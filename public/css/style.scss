@@ -1,12 +1,17 @@
 * {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: "Ubuntu", sans-serif;
 }
 
 body,
 html {
 	margin: 0px;
 	padding: 0px;
+	// width: 100vw;
+
 	background-color: #dddddd;
+}
+html {
+	overflow-x: hidden;
 }
 
 a {
@@ -40,6 +45,9 @@ a {
 		padding: 5px;
 		display: flex;
 		justify-content: space-evenly;
+		.name-title-mobile {
+			display: none;
+		}
 		.skill {
 			color: #dddddd;
 			text-align: center;
@@ -80,7 +88,6 @@ a {
 		justify-content: center;
 		.name-image {
 			margin: auto;
-			//border-top: 3px solid #343434;
 			width: 300px;
 			height: 300px;
 			margin-top: -150px;
@@ -103,14 +110,14 @@ a {
 			font-size: 50px;
 		}
 		.name-text {
-			font-family: 'Pacifico', cursive;
+			font-family: "ZCOOL QingKe HuangYou", cursive;
 			margin-bottom: 25px;
 			box-sizing: border-box;
 			padding: 15px;
 			color: #dddddd;
 			letter-spacing: 1em;
 			text-align: center;
-			font-size: 24px;
+			font-size: 34px;
 		}
 	}
 	.skills-container {
@@ -131,6 +138,7 @@ a {
 				border-radius: 50%;
 				width: 90px;
 				height: 90px;
+				padding: 10px 0 10px 2px;
 				padding: 10px;
 				border: 2px solid #343434;
 				text-align: center;
@@ -153,6 +161,8 @@ a {
 }
 
 #skills {
+	height: 100vh;
+
 	div {
 		padding-top: 10px;
 		border-bottom: 2px solid rgba(99, 99, 99, 0.5);
@@ -185,6 +195,7 @@ a {
 }
 
 #work {
+	// height: 100vh;
 	padding-top: 20px;
 	display: flex;
 	justify-content: space-evenly;
@@ -199,8 +210,11 @@ a {
 }
 
 #about {
+	// height: 100vh;
+
 	.about-text {
 		padding: 30px 10%;
+		font-size: 22px;
 	}
 	.about-float-img {
 		border: 2px solid #343434;
@@ -215,10 +229,6 @@ a {
 }
 
 #contact {
-	padding: 40px 20%;
-	h3 {
-		margin: 30px 0px;
-	}
 	.btn-lg {
 		color: #eeeeee;
 		background-color: #616161;
@@ -228,7 +238,90 @@ a {
 			filter: invert(1);
 		}
 	}
+	.banner-social-list {
+		li {
+			a {
+				width: 150px;
+			}
+		}
+	}
 }
 .bg-dark {
 	background-color: #343434 !important;
+}
+@media screen and (max-width: 540px) {
+	#header {
+		.col {
+			a[href="#top"] {
+				display: none;
+			}
+			.d-none {
+				display: inline !important;
+			}
+		}
+		#menu {
+			.skill {
+				width: 70px;
+				font-size: 16px;
+				margin-right: 2px;
+				padding: {
+					left: 5px;
+					right: 5px;
+				}
+				i {
+					display: none;
+				}
+			}
+		}
+	}
+
+	#slider {
+		.name-container {
+			margin-top: 50px;
+			.name-image {
+				margin-top: -80px;
+				width: 200px;
+				height: 200px;
+				img {
+				}
+			}
+			.name-title {
+				margin-top: -10px;
+			}
+			.name-text {
+				margin-top: -10px;
+				font-size: 22px;
+			}
+		}
+		.skills-container {
+			.container {
+				a {
+					width: 80px;
+					height: 80px;
+					padding: 10px 0 10px 2px;
+					font-size: 16px;
+					i {
+						padding-left: 5px;
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+	#about {
+		.about-text {
+			padding: 30px 5%;
+			font-size: 16px;
+		}
+		.about-float-img {
+			border: 2px solid #343434;
+			margin-right: 20px;
+			border-radius: 50%;
+			height: 200px;
+			float: left;
+		}
+		.about-list {
+			text-align: center;
+		}
+	}
 }

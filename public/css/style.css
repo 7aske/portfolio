@@ -1,5 +1,5 @@
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body,
@@ -7,6 +7,10 @@ html {
   margin: 0px;
   padding: 0px;
   background-color: #dddddd;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -51,6 +55,10 @@ a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+#header #menu .name-title-mobile {
+  display: none;
 }
 
 #header #menu .skill {
@@ -130,7 +138,7 @@ a:hover {
 }
 
 #slider .name-container .name-text {
-  font-family: 'Pacifico', cursive;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
   margin-bottom: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -138,7 +146,7 @@ a:hover {
   color: #dddddd;
   letter-spacing: 1em;
   text-align: center;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 #slider .skills-container {
@@ -169,6 +177,7 @@ a:hover {
   border-radius: 50%;
   width: 90px;
   height: 90px;
+  padding: 10px 0 10px 2px;
   padding: 10px;
   border: 2px solid #343434;
   text-align: center;
@@ -191,6 +200,10 @@ a:hover {
 #slider .skills-container .container a:hover i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+#skills {
+  height: 100vh;
 }
 
 #skills div {
@@ -256,6 +269,7 @@ a:hover {
 
 #about .about-text {
   padding: 30px 10%;
+  font-size: 22px;
 }
 
 #about .about-float-img {
@@ -268,14 +282,6 @@ a:hover {
 
 #about .about-list {
   text-align: center;
-}
-
-#contact {
-  padding: 40px 20%;
-}
-
-#contact h3 {
-  margin: 30px 0px;
 }
 
 #contact .btn-lg {
@@ -291,7 +297,68 @@ a:hover {
           filter: invert(1);
 }
 
+#contact .banner-social-list li a {
+  width: 150px;
+}
+
 .bg-dark {
   background-color: #343434 !important;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 540px) {
+  #header .col a[href="#top"] {
+    display: none;
+  }
+  #header .col .d-none {
+    display: inline !important;
+  }
+  #header #menu .skill {
+    width: 70px;
+    font-size: 16px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #header #menu .skill i {
+    display: none;
+  }
+  #slider .name-container {
+    margin-top: 50px;
+  }
+  #slider .name-container .name-image {
+    margin-top: -80px;
+    width: 200px;
+    height: 200px;
+  }
+  #slider .name-container .name-title {
+    margin-top: -10px;
+  }
+  #slider .name-container .name-text {
+    margin-top: -10px;
+    font-size: 22px;
+  }
+  #slider .skills-container .container a {
+    width: 80px;
+    height: 80px;
+    padding: 10px 0 10px 2px;
+    font-size: 16px;
+  }
+  #slider .skills-container .container a i {
+    padding-left: 5px;
+    font-size: 28px;
+  }
+  #about .about-text {
+    padding: 30px 5%;
+    font-size: 16px;
+  }
+  #about .about-float-img {
+    border: 2px solid #343434;
+    margin-right: 20px;
+    border-radius: 50%;
+    height: 200px;
+    float: left;
+  }
+  #about .about-list {
+    text-align: center;
+  }
+}
