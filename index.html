@@ -1,315 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-		<link rel="stylesheet" href="./public/css/style.css" />
-		<title>Nikola Tasic</title>
-	</head>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+    <link rel="stylesheet" href="./public/css/style.css"/>
+    <link rel="stylesheet" href="./public/css/scrollbar.css"/>
+    <title>Nikola Tasic</title>
+</head>
 
-	<body>
-		<div id="header">
-			<div class="col">
-				<a href="#top" data-scrollTo="#top" class="text-light skill">Nikola Tasic</a>
-				<a href="#top" data-scrollTo="#top" class="text-light skill d-none">NT</a>
-			</div>
-			<div id="menu" class="col">
-				<a href="#skills" data-scrollTo="#skills" class="skill">
-					<i class="fa fa-code"></i>
-					Skills
-				</a>
-				<a href="#work" data-scrollTo="#work" class="skill">
-					<i class="fa fa-pencil"></i>
-					Work
-				</a>
-				<a href="#about" data-scrollTo="#about" class="skill">
-					<i class="fa fa-info"></i>
-					About
-				</a>
-				<a href="#contact" data-scrollTo="#contact" class="skill">
-					<i class="fa fa-phone"></i>
-					Contact
-				</a>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div id="slider">
-				<div class="name-container">
-					<div class="name-image animated slideInDown">
-						<img src="./public/images/profile.jpg" alt="profile" />
-					</div>
-					<div class="name-title">Nikola Tasic</div>
-					<div class="name-text">IT Enthusiast</div>
-				</div>
-				<div class="skills-container">
-					<div class="container">
-						<a href="#skills" data-scrollTo="#skills" class="skill animated bounceInUp">
-							<i class="fa fa-code"></i>
-							<br />Skills
-						</a>
-						<a href="#work" data-scrollTo="#work" class="skill animated bounceInUp">
-							<i class="fa fa-pencil"></i>
-							<br />Work
-						</a>
-						<a href="#about" data-scrollTo="#about" class="skill animated bounceInUp">
-							<i class="fa fa-info"></i>
-							<br />About
-						</a>
-						<a href="#contact" data-scrollTo="#contact" class="skill animated bounceInUp">
-							<i class="fa fa-phone"></i>
-							<br />Contact
-						</a>
-					</div>
-				</div>
-			</div>
-			<div id="skills" class="container"></div>
-			<div class="divider">
-				My Work
-			</div>
-			<div id="work" class="container">
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<ul class="list-group">
-						<li class="list-group-item bg-dark text-light">GitHub:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://github.com/7aske/deployment-server" target="_blank"
-								>NodeJS Heroku-like server(repository)
-							</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://github.com/7aske/deployment-client-electron" target="_blank"
-								>NodeJS Heroku-like client(repository)</a
-							>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://github.com/7aske/deployment-client" target="_blank"
-								>NodeJS Heroku-like CLI client(repository)</a
-							>
-						</li>
-						<li class="list-group-item bg-dark text-light">React, MongoDB</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://reactsocialnetwork.herokuapp.com/" target="_blank">Social Network</a> -
-							<a href="https://github.com/7aske/reactsocialnetwork" target="_blank">repository </a>
-							<span class="text-muted"> - WIP</span>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://myrecipelist.herokuapp.com/" target="_blank">Recipe list</a> -
-							<a href="https://github.com/7aske/myrecipelist" target="_blank">repository </a>
-						</li>
-						<li class="list-group-item bg-dark text-light">Passport, MongoDB</li>
-						<li class="list-group-item bg-transparent">
-							<a href="http://mybankingapp.herokuapp.com" target="_blank">Banking app</a> -
-							<a href="https://github.com/7aske/mybankingapp" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-dark text-light">MongoDB:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="http://pldatabase.herokuapp.com/" target="_blank">Player/Tournament database</a> -
-							<a href="https://github.com/7aske/player-database" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://mongovoteapp.herokuapp.com/" target="_blank">Voting app</a> -
-							<a href="https://github.com/7aske/vote-app" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/quiz-app/" target="_blank">Quiz</a> -
-							<a href="https://github.com/7aske/quiz-app" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-dark text-light">Websites:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/underwild/" target="_blank">Underwild</a> -
-							<a href="https://github.com/7aske/underwild" target="_blank">repository</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<ul class="list-group">
-						<li class="list-group-item bg-dark text-light">Electron:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://github.com/7aske/todo-app" target="_blank">To-Do app(repository)</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/sorting-visualization/" target="_blank"
-								>Sorting visualization</a
-							>
-							-
-							<a href="https://github.com/7aske/sorting-visualization" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-dark text-light">Vanilla JS:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/parsing-calculator/" target="_blank"
-								>String parsing Calculator</a
-							>
-							-
-							<a href="https://github.com/7aske/parsing-calculator" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://codepen.io/7aske/pen/baNxwY" target="_blank">Random quote generator</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/calculator/" target="_blank">JS Calculator</a> -
-							<a href="https://github.com/7aske/calculator" target="_blank">repository</a>
-						</li>
+<body>
+<div id="header">
+    <div class="col">
+        <a href="#header" data-scrollTo="#top" class="text-light skill">Nikola Tasic</a>
+        <a href="#header" data-scrollTo="#top" class="text-light skill d-none">NT</a>
+    </div>
+    <div id="menu" class="col">
+        <a href="#skills" data-scrollTo="#skills" class="skill">
+            <i class="fa fa-code text-warning"></i>
+            Skills
+        </a>
+        <a href="#work" data-scrollTo="#work" class="skill">
+            <i class="fa fa-pencil text-warning"></i>
+            Work
+        </a>
+        <a href="#about" data-scrollTo="#about" class="skill">
+            <i class="fa fa-info text-warning"></i>
+            About
+        </a>
+        <a href="#contact" data-scrollTo="#contact" class="skill">
+            <i class="fa fa-phone text-warning"></i>
+            Contact
+        </a>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="slider">
+        <div class="name-container">
+            <div class="name-image animated slideInDown">
+                <img src="./public/images/profile.jpg" alt="profile"/>
+            </div>
+            <div class="name-title">Nikola Tasic</div>
+            <div class="name-text">IT Enthusiast</div>
+        </div>
+        <div class="skills-container">
+            <div class="container">
+                <a href="#skills" data-scrollTo="#skills" class="skill animated bounceInUp">
+                    <i class="fa fa-code text-warning"></i>
+                    <br/>Skills
+                </a>
+                <a href="#work" data-scrollTo="#work" class="skill animated bounceInUp">
+                    <i class="fa fa-pencil text-warning"></i>
+                    <br/>Work
+                </a>
+                <a href="#about" data-scrollTo="#about" class="skill animated bounceInUp">
+                    <i class="fa fa-info text-warning"></i>
+                    <br/>About
+                </a>
+                <a href="#contact" data-scrollTo="#contact" class="skill animated bounceInUp">
+                    <i class="fa fa-phone text-warning"></i>
+                    <br/>Contact
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="pl-3 pt-3">Languages</h2>
+                <ul class="list-group list-group-flush p-4">
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>JavaScript
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group list-group-flush p-0">
+                            <li class="list-group-item">node.js</li>
+                            <li class="list-group-item">express.js</li>
+                            <li class="list-group-item">electron.js</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>Python
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group list-group-flush p-0">
+                            <li class="list-group-item">Flask</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>Golang
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>Java
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>Rust
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2 class="pl-3 pt-3">Other</h2>
+                <ul class="list-group list-group-flush p-4">
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>Databases
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group list-group-flush p-0">
+                            <li class="list-group-item">MongoDB</li>
+                            <li class="list-group-item">MySql</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>Operating Systems
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group list-group-flush p-0">
+                            <li class="list-group-item">Linux</li>
+                            <li class="list-group-item">Windows</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>Networking
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>MS Office
+                        <div class="skill-bar">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+        My Work
+    </div>
+    <div id="work" class="container">
+        <!--<div class="col-lg-6 col-md-6 col-sm-12">-->
+        <!--<ul class="list-group">-->
+        <!--<li class="list-group-item bg-dark text-light">GitHub:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://github.com/7aske/deployment-server" target="_blank"-->
+        <!--&gt;NodeJS Heroku-like server(repository)-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://github.com/7aske/deployment-client-electron" target="_blank"-->
+        <!--&gt;NodeJS Heroku-like client(repository)</a-->
+        <!--&gt;-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://github.com/7aske/deployment-client" target="_blank"-->
+        <!--&gt;NodeJS Heroku-like CLI client(repository)</a-->
+        <!--&gt;-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">React, MongoDB</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://reactsocialnetwork.herokuapp.com/" target="_blank">Social Network</a> - -->
+        <!--<a href="https://github.com/7aske/reactsocialnetwork" target="_blank">repository </a>-->
+        <!--<span class="text-muted"> - WIP</span>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://myrecipelist.herokuapp.com/" target="_blank">Recipe list</a> - -->
+        <!--<a href="https://github.com/7aske/myrecipelist" target="_blank">repository </a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">Passport, MongoDB</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="http://mybankingapp.herokuapp.com" target="_blank">Banking app</a> - -->
+        <!--<a href="https://github.com/7aske/mybankingapp" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">MongoDB:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="http://pldatabase.herokuapp.com/" target="_blank">Player/Tournament database</a> - -->
+        <!--<a href="https://github.com/7aske/player-database" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://mongovoteapp.herokuapp.com/" target="_blank">Voting app</a> - -->
+        <!--<a href="https://github.com/7aske/vote-app" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/quiz-app/" target="_blank">Quiz</a> - -->
+        <!--<a href="https://github.com/7aske/quiz-app" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">Websites:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/underwild/" target="_blank">Underwild</a> - -->
+        <!--<a href="https://github.com/7aske/underwild" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="col-lg-6 col-md-6 col-sm-12">-->
+        <!--<ul class="list-group">-->
+        <!--<li class="list-group-item bg-dark text-light">Electron:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://github.com/7aske/todo-app" target="_blank">To-Do app(repository)</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/sorting-visualization/" target="_blank"-->
+        <!--&gt;Sorting visualization</a-->
+        <!--&gt;-->
+        <!-- - -->
+        <!--<a href="https://github.com/7aske/sorting-visualization" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">Vanilla JS:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/parsing-calculator/" target="_blank"-->
+        <!--&gt;String parsing Calculator</a-->
+        <!--&gt;-->
+        <!-- - -->
+        <!--<a href="https://github.com/7aske/parsing-calculator" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://codepen.io/7aske/pen/baNxwY" target="_blank">Random quote generator</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/calculator/" target="_blank">JS Calculator</a> - -->
+        <!--<a href="https://github.com/7aske/calculator" target="_blank">repository</a>-->
+        <!--</li>-->
 
-						<li class="list-group-item bg-transparent">
-							<a href="https://codepen.io/7aske/pen/zpjNBj" target="_blank">Pomodoro clock</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://codepen.io/7aske/pen/BxYrwJ" target="_blank">Analog clock</a>
-						</li>
-						<li class="list-group-item bg-dark text-light">API:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/twitch/." target="_blank">Twitch app</a> -
-							<a href="https://github.com/7aske/twitch" target="_blank">github</a>
-						</li>
-						<li class="list-group-item bg-dark text-light">Games:</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/pong/" target="_blank">Pong </a>-
-							<a href="https://github.com/7aske/pong/" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/tictactoe/" target="_blank">Tic Tac Toe</a> -
-							<a href="https://github.com/7aske/tictactoe" target="_blank">repository</a>
-						</li>
-						<li class="list-group-item bg-transparent">
-							<a href="https://7aske.github.io/simon-game/" target="_blank">Simon </a>-
-							<a href="https://github.com/7aske/simon-game" target="_blank">repository</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="divider">
-				About
-			</div>
-			<div id="about" class="container">
-				<div class="row">
-					<h2 class="pl-3 mt-3">Short</h2>
-					<p class="about-text text-justify">
-						Hi, my name is Nikola Tasic born on 24th of May 1995. I am your standard garden variety software
-						nerd. That means if something has computer code in it I had already read about it or tried to
-						implement it myself. Among the huge range of my interesets I would emphasize the Web, networks
-						and scripting languages as my strong points. Regarding Web development I had written servers in
-						4 languages so far but I tend to default to Node.js for my day to day needs. As for programming
-						my go to languages are JavaScript and Python. I have strong knowledge in GoLang and Java and
-						have recently started learning Rust. Also im a Linux user and a big fan of Arch. Aside from
-						programming I do documentary photography and my photos are regularly uploaded to Instagram by my
-						Python bot. Cycling is my go-to relaxataion activity, helps me clear my head and solve
-						difficulties. easier I think I am honest, enthusiastic, easy to work with and more than willing
-						to think outside of the box to solve any problem.
-					</p>
-				</div>
-				<div class="row">
-					<h2 class="pl-3">Education</h2>
-					<div class="about-text">
-						<ul>
-							<li>
-								elementary - “Vozd Karadjordje Nis” (2002-2010)
-							</li>
-							<li>
-								high school – “Bora Stankovic Nis” - mathematics department (2010-2014)
-							</li>
-							<li>
-								university – “Univerzitet Metropolitan Beograd” - software enineering (2018-)
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="divider">
-				Contact
-			</div>
-			<div id="contact" class="content-section text-center pt-4">
-				<div class="container">
-					<h5 class="text-center">
-						Feel free to contact me by filling the contact form or visiting my social network sites.
-					</h5>
-					<div class="row">
-						<div class="col"></div>
-						<div class="col-md-6 col-sm-12">
-							<form
-								class="form-horizontal"
-								method="POST"
-								action="https://portfoliomailer7aske.herokuapp.com/"
-							>
-								<div class="form-group">
-									<label for="inputName2">Name</label>
-									<input
-										type="text"
-										class="form-control"
-										name="name"
-										id="name"
-										placeholder="Jane Doe"
-										required
-									/>
-								</div>
-								<div class="form-group">
-									<label for="inputEmail2">Email</label>
-									<input
-										type="email"
-										class="form-control"
-										name="email"
-										id="email"
-										placeholder="jane.doe@.com"
-										required
-									/>
-								</div>
-								<div class="form-group ">
-									<label for="inputText">Your Message</label>
-									<textarea
-										class="form-control"
-										name="message"
-										id="message"
-										placeholder="Message"
-										required
-									></textarea>
-								</div>
-								<button type="submit" class="btn btn-lg">Send Message</button>
-							</form>
-							<hr />
-						</div>
-						<div class="col"></div>
-					</div>
-					<h3 class="col-12">My Social Sites</h3>
-					<ul class="list-inline banner-social-list">
-						<li class="col-sm-12 col-md-3 d-inline-block mb-2">
-							<a href="https://github.com/7aske" target="_blank" class="btn btn-lg">
-								<i class="fa fa-github">
-									<span class="network-name">GitHub</span>
-								</i>
-							</a>
-						</li>
-						<li class="col-sm-12 col-md-3 d-inline-block mb-2">
-							<a
-								href="https://www.facebook.com/profile.php?id=1203107204"
-								target="_blank"
-								class="btn btn-lg"
-							>
-								<i class="fa fa-facebook">
-									<span class="network-name">Facebook</span>
-								</i>
-							</a>
-						</li>
-						<li class="col-sm-12 col-md-3 d-inline-block mb-2">
-							<a
-								href="https://www.linkedin.com/in/nikola-tasi%C4%87-87b8bb115/"
-								target="_blank"
-								class="btn btn-lg"
-							>
-								<i class="fa fa-linkedin">
-									<span class="network-name">LinkedIn</span>
-								</i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-		<script src="./public/js/main.js"></script>
-	</body>
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://codepen.io/7aske/pen/zpjNBj" target="_blank">Pomodoro clock</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://codepen.io/7aske/pen/BxYrwJ" target="_blank">Analog clock</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">API:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/twitch/." target="_blank">Twitch app</a> - -->
+        <!--<a href="https://github.com/7aske/twitch" target="_blank">github</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-dark text-light">Games:</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/pong/" target="_blank">Pong </a>- -->
+        <!--<a href="https://github.com/7aske/pong/" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/tictactoe/" target="_blank">Tic Tac Toe</a> - -->
+        <!--<a href="https://github.com/7aske/tictactoe" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--<li class="list-group-item bg-transparent">-->
+        <!--<a href="https://7aske.github.io/simon-game/" target="_blank">Simon </a>- -->
+        <!--<a href="https://github.com/7aske/simon-game" target="_blank">repository</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <p>Here are listed some of the more notable projects I worked on:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>intapy-bot
+                        (python)
+                        <small class="ml-3"><a href="https://github.com/7aske/instapy-bot" target="_blank"><i
+                                class="fa fa-link"></i>repository</a></small>
+                        <br>
+                        <small>fully automated uploading bot for Instagram implemented with the fork of instapy-cli
+                        </small>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>deployment-server
+                        (typescript-express)
+                        <small class="ml-3"><a href="https://github.com/7aske/deployment-server" target="_blank"><i
+                                class="fa fa-link"></i>repository</a></small>
+                        <br>
+                        <small>early attempt at continuous deployment server with optional web-based GUI inspired by
+                            Heroku
+                        </small>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>web-shop
+                        (typescript-express-mongodb)
+                        <small class="ml-3"><a href="https://github.com/7aske/web-shop" target="_blank"><i
+                                class="fa fa-link"></i>repository</a></small>
+                        <br>
+                        <small>work in progress basic RESTful API shop template with CRUD admin panel</small>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>http-server
+                        (golang)
+                        <small class="ml-3"><a href="https://github.com/7aske/basic-http-server-go" target="_blank"><i
+                                class="fa fa-link"></i>repository</a></small>
+                        <br>
+                        <small>HTTP server implementation in golang</small>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-arrow-right text-warning mr-2"></i>ld-electron
+                        (typescript-electron-sqlite3)
+                        <small class="ml-3"><a href="https://github.com/7aske/ld-electron" target="_blank"><i
+                                class="fa fa-link"></i>repository</a></small>
+                        <br>
+                        <small>work in progress HR application written using electron.js framework</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <p class="pt-5 pb-5">
+                    Tons of additional projects on my <a href="https://github.com/7aske" target="_blank"><i
+                        class="fa fa-github"></i>GitHub</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+        About
+    </div>
+    <div id="about" class="container">
+        <div class="row">
+            <h2 class="pl-3 mt-3">Short</h2>
+            <p class="about-text text-justify">
+                Hi, my name is Nikola Tasic born on 24th of May 1995. I am your standard garden variety software
+                nerd. That means if something has computer code in it I had already read about it or tried to
+                implement it myself. Among the huge range of my interesets I would emphasize the Web, networks
+                and scripting languages as my strong points. Regarding Web development I had written servers in
+                4 languages so far but I tend to default to Node.js for my day to day needs. As for programming
+                my go to languages are JavaScript and Python. I have strong knowledge in GoLang and Java and
+                have recently started learning Rust. Also im a Linux user and a big fan of Arch. Aside from
+                programming I do documentary photography and my photos are regularly uploaded to Instagram by my
+                Python bot. Cycling is my go-to relaxataion activity, helps me clear my head and solve
+                difficulties. easier I think I am honest, enthusiastic, easy to work with and more than willing
+                to think outside of the box to solve any problem.
+            </p>
+        </div>
+        <div class="row">
+            <h2 class="pl-3">Education</h2>
+            <div class="about-text">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        elementary - “Vozd Karadjordje Nis” (2002 - 2010)
+                    </li>
+                    <li class="list-group-item">
+                        high school – “Bora Stankovic Nis” - mathematics department (2010 - 2014)
+                    </li>
+                    <li class="list-group-item">
+                        university – “Univerzitet Metropolitan Beograd” - software enineering (2018 - present)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="pl-3 w-100">More</h2>
+            <div class="about-text">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        address: Cirila i Metodija 18/22 18000 Nis, Serbia
+                    </li>
+                    <li class="list-group-item">
+                        phone: +(381) 60 451 40 36
+                    </li>
+                    <li class="list-group-item">
+                        email: ntasic7@gmail.com
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="pl-2 pt-5 pb-5">Download a PDF copy of my resume <a href="./public/pdf/resume.pdf"><i class="fa fa-file m-1"> </i>here</a>.
+            </p>
+        </div>
+    </div>
+    <div class="divider">
+        Contact
+    </div>
+    <div id="contact" class="content-section text-center pt-4">
+        <div class="container">
+            <h5 class="text-center">
+                Feel free to contact me by filling the contact form or by visiting my social network sites.
+            </h5>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-6 col-sm-12">
+                    <form
+                            class="form-horizontal"
+                            method="POST"
+                            action="https://portfoliomailer7aske.herokuapp.com/"
+                    >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Jane Doe"
+                                    required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                    type="email"
+                                    class="form-control"
+                                    name="email"
+                                    id="email"
+                                    placeholder="jane.doe@.com"
+                                    required
+                            />
+                        </div>
+                        <div class="form-group ">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                    class="form-control"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Message"
+                                    required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg">Send Message</button>
+                    </form>
+                    <hr/>
+                </div>
+                <div class="col"></div>
+            </div>
+            <h3 class="col-12">My Social Sites</h3>
+            <ul class="list-inline banner-social-list">
+                <li class="col-sm-12 col-md-3 d-inline-block mb-2">
+                    <a href="https://github.com/7aske" target="_blank" class="btn btn-lg">
+                        <i class="fa fa-github">
+                            <span class="network-name">GitHub</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="col-sm-12 col-md-3 d-inline-block mb-2">
+                    <a
+                            href="https://www.facebook.com/profile.php?id=1203107204"
+                            target="_blank"
+                            class="btn btn-lg"
+                    >
+                        <i class="fa fa-facebook">
+                            <span class="network-name">Facebook</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="col-sm-12 col-md-3 d-inline-block mb-2">
+                    <a
+                            href="https://www.linkedin.com/in/nikola-tasi%C4%87-87b8bb115/"
+                            target="_blank"
+                            class="btn btn-lg"
+                    >
+                        <i class="fa fa-linkedin">
+                            <span class="network-name">LinkedIn</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="./public/js/main.js"></script>
+</body>
 </html>
