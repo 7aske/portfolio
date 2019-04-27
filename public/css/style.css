@@ -207,8 +207,18 @@ a:hover {
 #work a:hover {
   color: #343434;
 }
-#work .list-group-item {
+#work .list-group {
+  margin: auto;
+}
+#work .list-group .list-group-item {
+  padding-right: 120px;
   background-color: #dddddd;
+}
+#work .list-group .list-group-item img {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 100px;
 }
 
 #about .about-text {
@@ -300,6 +310,13 @@ a:hover {
   }
   #about .about-list {
     text-align: center;
+  }
+
+  #work .list-group-item {
+    padding-right: 5px;
+  }
+  #work .list-group-item img {
+    height: 80px;
   }
 }
 

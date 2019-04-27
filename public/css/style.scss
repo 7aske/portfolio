@@ -245,9 +245,20 @@ a {
 			color: #343434;
 		}
 	}
-	.list-group-item {
-		background-color: #dddddd;
+	.list-group{
+		margin: auto;
+		.list-group-item {
+			padding-right: 120px;
+			background-color: #dddddd;
+			img {
+				position: absolute;
+				top: 10px;
+				right: 0;
+				height: 100px;
+			}
+		}
 	}
+
 }
 
 #about {
@@ -378,4 +389,14 @@ a {
 			text-align: center;
 		}
 	}
+
+	#work {
+		.list-group-item {
+			padding-right: 5px;
+			img {
+				height: 80px;
+			}
+		}
+	}
+
 }

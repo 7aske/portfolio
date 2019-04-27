@@ -11,13 +11,15 @@ const about = document.getElementById("about");
 let aboutTrigger = about.offsetTop - about.offsetHeight / 2;
 const contact = document.getElementById("contact");
 let contactTrigger = contact.offsetTop - contact.offsetHeight;
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
+
+const workProjs = document.querySelectorAll("#work .list-group-item");
 
 const skillBars = document.querySelectorAll(".skill-bar");
 
-form.addEventListener("submit", () => {
-    location.reload();
-});
+// form.addEventListener("submit", () => {
+//     location.reload();
+// });
 
 function menu(y)
 {
@@ -77,7 +79,7 @@ function bars(y)
                 width = "80px";
                 break;
             case 4:
-                width = "30px";
+                width = "40px";
                 break;
             case 5:
                 width = "70px";
@@ -93,8 +95,19 @@ function bars(y)
                 break;
             }
             b.firstElementChild.style.width = width;
-        } else if (y > barPos) {
+        } else {
             b.firstElementChild.style.width = "0px";
+        }
+    });
+}
+
+function projs(y){
+    workProjs.forEach((p, i) => {
+        const barPos = window.scrollY + p.getBoundingClientRect().top - window.innerHeight;
+        if (y > barPos + window.innerHeight) {
+            p.firstElementChild.classList.remove("tada");
+        } else if (y < barPos) {
+            p.firstElementChild.classList.remove("tada");
         }
     });
 }
@@ -103,6 +116,7 @@ document.addEventListener("scroll", e => {
     menu(window.pageYOffset + 132);
     highlighter(window.pageYOffset + 132);
     bars(window.pageYOffset + 132);
+    projs(window.pageYOffset + 132);
 });
 allButtons.forEach(button => {
     button.addEventListener("click", event => {
@@ -121,5 +135,11 @@ allButtons.forEach(button => {
                 behavior : "smooth"
             });
         }
+    });
+});
+
+workProjs.forEach(p => {
+    p.addEventListener("mouseenter", ()=>{
+        p.children[0].classList.add("tada");
     });
 });
