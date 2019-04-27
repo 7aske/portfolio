@@ -248,6 +248,10 @@ a {
 	.list-group{
 		margin: auto;
 		.list-group-item {
+			small:last-of-type {
+				display: inline-block;
+				margin: 20px 0 !important;
+			}
 			padding-right: 120px;
 			background-color: #dddddd;
 			img {
@@ -391,12 +395,18 @@ a {
 	}
 
 	#work {
-		.list-group-item {
-			padding-right: 5px;
-			img {
-				height: 80px;
+		.list-group{
+			.list-group-item {
+				padding-right: 5px;
+				a {
+					display: block;
+				}
+				img {
+					height: 80px;
+				}
 			}
 		}
+
 	}
 
 }

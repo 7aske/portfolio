@@ -214,6 +214,10 @@ a:hover {
   padding-right: 120px;
   background-color: #dddddd;
 }
+#work .list-group .list-group-item small:last-of-type {
+  display: inline-block;
+  margin: 20px 0 !important;
+}
 #work .list-group .list-group-item img {
   position: absolute;
   top: 10px;
@@ -312,10 +316,13 @@ a:hover {
     text-align: center;
   }
 
-  #work .list-group-item {
+  #work .list-group .list-group-item {
     padding-right: 5px;
   }
-  #work .list-group-item img {
+  #work .list-group .list-group-item a {
+    display: block;
+  }
+  #work .list-group .list-group-item img {
     height: 80px;
   }
 }
