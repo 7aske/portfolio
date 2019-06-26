@@ -17,12 +17,7 @@ const workProjs = document.querySelectorAll("#work .list-group-item");
 
 const skillBars = document.querySelectorAll(".skill-bar");
 
-// form.addEventListener("submit", () => {
-//     location.reload();
-// });
-
-function menu(y)
-{
+function menu(y) {
     if (sliderBottom < y) {
         header.style.transform = "translateY(50px)";
     } else {
@@ -30,8 +25,7 @@ function menu(y)
     }
 }
 
-function highlighter(y)
-{
+function highlighter(y) {
     if (skillsTrigger < y) {
         buttons[0].classList.add("highlighted");
     } else {
@@ -57,51 +51,33 @@ function highlighter(y)
     }
 }
 
-function bars(y)
-{
+const langs = {
+    "skill-js": "120px",
+    "skill-python": "110px",
+    "skill-golang": "80px",
+    "skill-java": "80px",
+    "skill-c": "60px",
+    "skill-cs": "40px",
+    "skill-db": "70px",
+    "skill-os": "120px",
+    "skill-network": "120px",
+    "skill-office": "100px",
+};
+
+function bars(y) {
     skillBars.forEach((b, i) => {
         const barPos = window.scrollY + b.getBoundingClientRect().top - window.innerHeight;
-        if (y > barPos + window.innerHeight) {
+        if (y > barPos + window.innerHeight + 60) {
             b.firstElementChild.style.width = "0px";
         } else if (y > barPos) {
-            let width = "100px";
-            switch (i) {
-            case 0:
-                width = "120px";
-                break;
-            case 1:
-                width = "110px";
-                break;
-            case 2:
-                width = "80px";
-                break;
-            case 3:
-                width = "80px";
-                break;
-            case 4:
-                width = "40px";
-                break;
-            case 5:
-                width = "70px";
-                break;
-            case 6:
-                width = "120px";
-                break;
-            case 7:
-                width = "120px";
-                break;
-            case 8:
-                width = "100px";
-                break;
-            }
-            b.firstElementChild.style.width = width;
+            b.firstElementChild.style.width = langs[b.id] || "100px";
         } else {
             b.firstElementChild.style.width = "0px";
         }
     });
 }
 
-function projs(y){
+function projs(y) {
     workProjs.forEach((p, i) => {
         const barPos = window.scrollY + p.getBoundingClientRect().top - window.innerHeight;
         if (y > barPos + window.innerHeight) {
@@ -124,22 +100,22 @@ allButtons.forEach(button => {
         let element = document.querySelector(event.target.attributes["data-scrollTo"].value);
         if (element == null) {
             window.scroll({
-                top : 0,
-                left : 0,
-                behavior : "smooth"
+                top: 0,
+                left: 0,
+                behavior: "smooth"
             });
         } else {
             window.scroll({
-                top : element.offsetTop - 150,
-                left : 0,
-                behavior : "smooth"
+                top: element.offsetTop - 150,
+                left: 0,
+                behavior: "smooth"
             });
         }
     });
 });
 
 workProjs.forEach(p => {
-    p.addEventListener("mouseenter", ()=>{
+    p.addEventListener("mouseenter", () => {
         p.children[0].classList.add("tada");
     });
 });

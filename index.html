@@ -83,7 +83,7 @@
                 <ul class="list-group list-group-flush p-4">
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>JavaScript
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-js">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -96,7 +96,7 @@
                     </li>
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>Python
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-python">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -106,20 +106,26 @@
                         </ul>
                     </li>
                     <li class="list-group-item">
-                        <i class="fa fa-arrow-right text-warning mr-2"></i>Golang
-                        <div class="skill-bar">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>GoLang
+                        <div class="skill-bar" id="skill-golang">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>Java
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-java">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <i class="fa fa-arrow-right text-warning mr-2"></i>C
-                        <div class="skill-bar">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>C/C++
+                        <div class="skill-bar" id="skill-c">
+                            <div class="skill-fill bg-warning"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-arrow-right text-warning mr-2"></i>C#
+                        <div class="skill-bar" id="skill-cs">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -130,7 +136,7 @@
                 <ul class="list-group list-group-flush p-4">
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>Databases
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-db">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -142,7 +148,7 @@
                     </li>
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>Operating Systems
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-os">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -154,13 +160,13 @@
                     </li>
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>Networking
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-network">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <i class="fa fa-arrow-right text-warning mr-2"></i>MS Office
-                        <div class="skill-bar">
+                        <div class="skill-bar" id="skill-office">
                             <div class="skill-fill bg-warning"></div>
                         </div>
                     </li>
@@ -172,115 +178,6 @@
         My Work
     </div>
     <div id="work" class="container">
-        <!--<div class="col-lg-6 col-md-6 col-sm-12">-->
-        <!--<ul class="list-group">-->
-        <!--<li class="list-group-item bg-dark text-light">GitHub:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://github.com/7aske/deployment-server" target="_blank"-->
-        <!--&gt;NodeJS Heroku-like server(repository)-->
-        <!--</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://github.com/7aske/deployment-client-electron" target="_blank"-->
-        <!--&gt;NodeJS Heroku-like client(repository)</a-->
-        <!--&gt;-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://github.com/7aske/deployment-client" target="_blank"-->
-        <!--&gt;NodeJS Heroku-like CLI client(repository)</a-->
-        <!--&gt;-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">React, MongoDB</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://reactsocialnetwork.herokuapp.com/" target="_blank">Social Network</a> - -->
-        <!--<a href="https://github.com/7aske/reactsocialnetwork" target="_blank">repository </a>-->
-        <!--<span class="text-muted"> - WIP</span>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://myrecipelist.herokuapp.com/" target="_blank">Recipe list</a> - -->
-        <!--<a href="https://github.com/7aske/myrecipelist" target="_blank">repository </a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">Passport, MongoDB</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="http://mybankingapp.herokuapp.com" target="_blank">Banking app</a> - -->
-        <!--<a href="https://github.com/7aske/mybankingapp" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">MongoDB:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="http://pldatabase.herokuapp.com/" target="_blank">Player/Tournament database</a> - -->
-        <!--<a href="https://github.com/7aske/player-database" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://mongovoteapp.herokuapp.com/" target="_blank">Voting app</a> - -->
-        <!--<a href="https://github.com/7aske/vote-app" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/quiz-app/" target="_blank">Quiz</a> - -->
-        <!--<a href="https://github.com/7aske/quiz-app" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">Websites:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/underwild/" target="_blank">Underwild</a> - -->
-        <!--<a href="https://github.com/7aske/underwild" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--<div class="col-lg-6 col-md-6 col-sm-12">-->
-        <!--<ul class="list-group">-->
-        <!--<li class="list-group-item bg-dark text-light">Electron:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://github.com/7aske/todo-app" target="_blank">To-Do app(repository)</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/sorting-visualization/" target="_blank"-->
-        <!--&gt;Sorting visualization</a-->
-        <!--&gt;-->
-        <!-- - -->
-        <!--<a href="https://github.com/7aske/sorting-visualization" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">Vanilla JS:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/parsing-calculator/" target="_blank"-->
-        <!--&gt;String parsing Calculator</a-->
-        <!--&gt;-->
-        <!-- - -->
-        <!--<a href="https://github.com/7aske/parsing-calculator" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://codepen.io/7aske/pen/baNxwY" target="_blank">Random quote generator</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/calculator/" target="_blank">JS Calculator</a> - -->
-        <!--<a href="https://github.com/7aske/calculator" target="_blank">repository</a>-->
-        <!--</li>-->
-
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://codepen.io/7aske/pen/zpjNBj" target="_blank">Pomodoro clock</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://codepen.io/7aske/pen/BxYrwJ" target="_blank">Analog clock</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">API:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/twitch/." target="_blank">Twitch app</a> - -->
-        <!--<a href="https://github.com/7aske/twitch" target="_blank">github</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-dark text-light">Games:</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/pong/" target="_blank">Pong </a>- -->
-        <!--<a href="https://github.com/7aske/pong/" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/tictactoe/" target="_blank">Tic Tac Toe</a> - -->
-        <!--<a href="https://github.com/7aske/tictactoe" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--<li class="list-group-item bg-transparent">-->
-        <!--<a href="https://7aske.github.io/simon-game/" target="_blank">Simon </a>- -->
-        <!--<a href="https://github.com/7aske/simon-game" target="_blank">repository</a>-->
-        <!--</li>-->
-        <!--</ul>-->
-
-        <!--</div>-->
         <div class="container">
             <div class="row">
                 <h3 class="mb-5">Here are listed some of the more notable projects I worked on:</h3>
