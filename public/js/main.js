@@ -96,6 +96,10 @@ document.addEventListener("scroll", e => {
 });
 allButtons.forEach(button => {
     button.addEventListener("click", event => {
+        console.log(event.target.attributes["data-scrollTo"] === undefined);
+        
+        if (event.target.attributes["data-scrollTo"] === undefined)
+            return true;
         event.preventDefault();
         let element = document.querySelector(event.target.attributes["data-scrollTo"].value);
         if (element == null) {
